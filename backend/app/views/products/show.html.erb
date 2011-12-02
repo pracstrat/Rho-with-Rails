@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Brand:</b>
+  <%= @product.brand %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @product.price %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @product.quantity %>
+</p>
+
+<p>
+  <b>Sku:</b>
+  <%= @product.sku %>
+</p>
+
+<p>
+  <b>Image:<%=@product.image_uri%></b>
+  <%= image_tag(@product.avatar.url(:thumb)) %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

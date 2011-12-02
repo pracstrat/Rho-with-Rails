@@ -1,0 +1,7 @@
+rhodes_path='/Users/GsLove/.rvm/gems/ruby-1.9.3-p0/gems/rhodes-3.2.3'
+app_name='storemanager'
+reload_app_changes=1
+debug_port=
+debug_host='127.0.0.1'
+platform='iphone'
+ext_path=/Users/GsLove/.rvm/gems/ruby-1.9.3-p0/gems/rhodes-3.2.3/lib/extensions/json;

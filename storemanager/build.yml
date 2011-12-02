@@ -1,0 +1,25 @@
+#sdk: "/Users/GsLove/.rvm/gems/ruby-1.9.3-p0/gems/rhodes-3.2.3"
+sdkversion: 3.2.1
+name: storemanager
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: "Windows Mobile 6 Professional SDK (ARMV4I)"
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.storemanager
+  BundleURLScheme: storemanager
+wp:
+  productid: '6dce76c0-fdf8-012e-fb16-001ec2117411'
+symbian:
+  uid: '0xe89efdb0'
+android:
+  version: 2.1
+
+extensions: ["json", "another-extension"]
