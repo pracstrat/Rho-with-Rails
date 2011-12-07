@@ -10,6 +10,11 @@ class ProductsController < ApplicationController
     end
   end
 
+  def all
+    @products = Product.all
+    render json: @products
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

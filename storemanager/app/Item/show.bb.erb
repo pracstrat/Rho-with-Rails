@@ -1,0 +1,25 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @item.name %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @item.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">Name</td>
+        <td class="itemValue"><%= @item.name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">ProductId</td>
+        <td class="itemValue"><%= @item.product_id%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>

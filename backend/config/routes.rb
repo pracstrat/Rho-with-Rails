@@ -1,5 +1,16 @@
 Backend::Application.routes.draw do
-  resources :products
+  resources :items do
+    collection do
+      get :all
+    end
+  end
+
+  resources :products do
+    collection do
+      get :all
+    end
+    resources :items
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

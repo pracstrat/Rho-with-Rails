@@ -45,6 +45,10 @@
               <a href="<%= url_for :action => :view, :id => @product.object %>">View</a>              
             </div>
           </li>
+          <li>
+            <div class="itemLabel">Items</div>
+            <div class="itemValue"><a href="/app/Item/view?product_id=<%=@product.object%>">View</a></div>
+          </li>
       
     </ul>
   </div>
